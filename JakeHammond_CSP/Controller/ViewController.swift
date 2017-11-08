@@ -11,8 +11,7 @@ import UIKit
 class ViewController: UIViewController
 {
     // MARK: Data members
-    @IBOutlet weak var algorithmText: UIButton!
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
