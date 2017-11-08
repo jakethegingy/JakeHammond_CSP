@@ -12,7 +12,7 @@ class AlgorithimsController: UIViewController
 {
     @IBOutlet weak var algorithmText: UILabel!
     
-    
+    //Today I learned how to make arrays in swift. I learned that you do [type] = [] to say the type and then initialize it. 
     
     private func setupAlgorithms() -> Void
     {
