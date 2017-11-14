@@ -28,7 +28,7 @@ class AlgorithimsController: UIViewController
         algorithmSteps = [stepOne, stepTwo, stepThree]
         
         let attributesDictionary = [NSAttributedStringKey.font : algorithmText.font]
-        let fullAttributedString = NSMutableAttributedString(string: algorithm, attributes: attributesDictionary)
+        let fullAttributedString = NSMutableAttributedString(string: algorithm, attributes: attributesDictionary )
         
         for step in algorithmSteps
         {
@@ -59,7 +59,7 @@ class AlgorithimsController: UIViewController
     
     {
         super.viewDidLoad()
-
+        setupAlgorithms()
         // Do any additional setup after loading the view.
     }
 
