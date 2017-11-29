@@ -17,8 +17,10 @@
 		CF4BB1A61FB352F2001B0A86 /* DataInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4BB1A51FB352F2001B0A86 /* DataInfoController.swift */; };
 		CF4BB1A81FB3530F001B0A86 /* AlgorithimsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4BB1A71FB3530F001B0A86 /* AlgorithimsController.swift */; };
 		CF4BB1AA1FB35322001B0A86 /* ProgramingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4BB1A91FB35322001B0A86 /* ProgramingController.swift */; };
-		CF4BB1AC1FB3533A001B0A86 /* InternetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4BB1AB1FB3533A001B0A86 /* InternetController.swift */; };
 		CF4BB1AE1FB35352001B0A86 /* GlobalImpactController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4BB1AD1FB35352001B0A86 /* GlobalImpactController.swift */; };
+		CF90B5C81FCF0ABF004AA206 /* InternetMasterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF90B5C71FCF0ABF004AA206 /* InternetMasterController.swift */; };
+		CF90B5CA1FCF0AD9004AA206 /* InternetDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF90B5C91FCF0AD9004AA206 /* InternetDetailController.swift */; };
+		CF90B5CD1FCF0B2A004AA206 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF90B5CC1FCF0B2A004AA206 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +36,10 @@
 		CF4BB1A51FB352F2001B0A86 /* DataInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInfoController.swift; sourceTree = "<group>"; };
 		CF4BB1A71FB3530F001B0A86 /* AlgorithimsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithimsController.swift; sourceTree = "<group>"; };
 		CF4BB1A91FB35322001B0A86 /* ProgramingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramingController.swift; sourceTree = "<group>"; };
-		CF4BB1AB1FB3533A001B0A86 /* InternetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetController.swift; sourceTree = "<group>"; };
 		CF4BB1AD1FB35352001B0A86 /* GlobalImpactController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactController.swift; sourceTree = "<group>"; };
+		CF90B5C71FCF0ABF004AA206 /* InternetMasterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterController.swift; sourceTree = "<group>"; };
+		CF90B5C91FCF0AD9004AA206 /* InternetDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailController.swift; sourceTree = "<group>"; };
+		CF90B5CC1FCF0B2A004AA206 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF90B5CD1FCF0B2A004AA206 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +59,7 @@
 			children = (
 				CF4BB18B1FB35220001B0A86 /* JakeHammond_CSP */,
 				CF4BB18A1FB35220001B0A86 /* Products */,
+				CF90B5CB1FCF0B29004AA206 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,11 +88,12 @@
 				CF4BB1AD1FB35352001B0A86 /* GlobalImpactController.swift */,
 				CF4BB1A91FB35322001B0A86 /* ProgramingController.swift */,
 				CF4BB1A71FB3530F001B0A86 /* AlgorithimsController.swift */,
-				CF4BB1AB1FB3533A001B0A86 /* InternetController.swift */,
 				CF4BB1A51FB352F2001B0A86 /* DataInfoController.swift */,
 				CF4BB1A31FB352D9001B0A86 /* AbstractionController.swift */,
 				CF4BB18E1FB35220001B0A86 /* ViewController.swift */,
 				CF4BB1A11FB352BC001B0A86 /* CreativityControllerViewController.swift */,
+				CF90B5C91FCF0AD9004AA206 /* InternetDetailController.swift */,
+				CF90B5C71FCF0ABF004AA206 /* InternetMasterController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -107,6 +114,14 @@
 				CF4BB1981FB35220001B0A86 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CF90B5CB1FCF0B29004AA206 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF90B5CC1FCF0B2A004AA206 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,14 +197,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF4BB1AE1FB35352001B0A86 /* GlobalImpactController.swift in Sources */,
-				CF4BB1AC1FB3533A001B0A86 /* InternetController.swift in Sources */,
 				CF4BB1A41FB352D9001B0A86 /* AbstractionController.swift in Sources */,
 				CF4BB1A61FB352F2001B0A86 /* DataInfoController.swift in Sources */,
 				CF4BB18F1FB35220001B0A86 /* ViewController.swift in Sources */,
 				CF4BB1A81FB3530F001B0A86 /* AlgorithimsController.swift in Sources */,
+				CF90B5C81FCF0ABF004AA206 /* InternetMasterController.swift in Sources */,
 				CF4BB1A21FB352BC001B0A86 /* CreativityControllerViewController.swift in Sources */,
 				CF4BB1AA1FB35322001B0A86 /* ProgramingController.swift in Sources */,
 				CF4BB18D1FB35220001B0A86 /* AppDelegate.swift in Sources */,
+				CF90B5CA1FCF0AD9004AA206 /* InternetDetailController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

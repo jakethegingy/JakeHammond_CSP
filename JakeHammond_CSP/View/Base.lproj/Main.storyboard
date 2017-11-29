@@ -27,7 +27,7 @@
         <!--View Controller-->
         <scene sceneID="gyq-f6-cjj">
             <objects>
-                <viewController storyboardIdentifier="BlockViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="q92-iT-ckB" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="andGateViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="q92-iT-ckB" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QYf-rB-0fW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,7 +63,7 @@
         <!--View Controller-->
         <scene sceneID="HT6-Rb-Ku0">
             <objects>
-                <viewController storyboardIdentifier="BlockViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tRR-wh-sQ7" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="binaryCodeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tRR-wh-sQ7" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ise-yQ-Ehj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,7 +98,7 @@
         <!--View Controller-->
         <scene sceneID="xEK-Dh-UwI">
             <objects>
-                <viewController storyboardIdentifier="BlockViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Z9D-pv-zf2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="blockCodeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Z9D-pv-zf2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R3P-2d-7os">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,7 +134,7 @@
         <!--View Controller-->
         <scene sceneID="Yqi-eh-LQF">
             <objects>
-                <viewController storyboardIdentifier="BlockViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Gqs-aV-xDS" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="byteCodeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Gqs-aV-xDS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oDE-H2-x3Q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -170,7 +170,7 @@
         <!--View Controller-->
         <scene sceneID="7g3-F4-zjf">
             <objects>
-                <viewController storyboardIdentifier="BlockViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4Sa-fi-cWr" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="javaCodeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4Sa-fi-cWr" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kxt-Sl-adi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -264,20 +264,38 @@
             </objects>
             <point key="canvasLocation" x="1641" y="165"/>
         </scene>
-        <!--View Controller-->
+        <!--Internet Detail View Controller-->
         <scene sceneID="3G0-VK-hTz">
             <objects>
-                <viewController id="WRR-65-BhJ" sceneMemberID="viewController">
+                <viewController id="WRR-65-BhJ" customClass="InternetDetailViewController" customModule="JakeHammond_CSP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iHT-L4-pDf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j5Y-xB-gbk">
+                                <rect key="frame" x="20" y="381" width="374" height="335"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ned-AJ-oLk">
+                                <rect key="frame" x="20" y="168" width="271" height="141"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Jdk-Ty-quG"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9f2-QL-jVm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2558" y="-455"/>
+            <point key="canvasLocation" x="2557.971014492754" y="-455.70652173913049"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="IyM-ot-jpT">
@@ -288,7 +306,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2rG-JJ-Xf5">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="2rG-JJ-Xf5">
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2rG-JJ-Xf5" id="mi8-R1-dGE">
@@ -335,7 +353,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8d4-EX-9Dj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1671" y="-781"/>
+            <point key="canvasLocation" x="1641" y="-777"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -373,7 +391,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74" y="165"/>
+            <point key="canvasLocation" x="141" y="165"/>
         </scene>
         <!--Algorithims Controller-->
         <scene sceneID="rkV-rV-wTF">
