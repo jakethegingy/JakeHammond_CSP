@@ -313,6 +313,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="WRR-65-BhJ" kind="showDetail" id="rfb-mh-zmA"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -442,5 +445,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="a6s-S1-paJ"/>
+        <segue reference="rfb-mh-zmA"/>
     </inferredMetricsTieBreakers>
 </document>
