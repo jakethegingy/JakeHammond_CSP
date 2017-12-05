@@ -13,11 +13,19 @@ class InternetDetailViewController : UIViewController
 {
     //MARK: GUI Controls
     @IBOutlet weak var textView: UILabel!
-    @IBOutlet weak var webViewer WKWebView!
+    @IBOutlet weak var webViewer: WKWebView!
     
-    var detailAdress : String?
+    var detailAddress : String?
     {
         //MARK: Update the detail view when a value is changed.
+        didSet
+        {
+            configureDetailView()
+        }
+    }
+    
+    var detailText : String?
+    {
         didSet
         {
             configureDetailView()
@@ -34,29 +42,29 @@ class InternetDetailViewController : UIViewController
     
     private func configureDetailView() -> Void
     {
-            if detailAdress != nil
+            if detailAddress != nil
             {
                 if let currentWebView = webViewer
                 {
-                    let centURL = URL(string: detailAdress!)
-                    let curentWebRequest = URLRequest(url: currentURL!)
-                    curentWebView.load(currentWebRequest)
+                    let currentURL = URL(string: detailAddress!)
+                    let currentWebRequest = URLRequest(url: currentURL!)
+                    currentWebView.load(currentWebRequest)
                 }
             }
             else
             {
-                if let curentWebView = webViewer
+                if let currentWebView = webViewer
                 {
                     let currentURL = URL(string: "http://www.foxnews.com")
-                    curentWebView.loa(URLRequest(url:currentURL!))
+                    currentWebView.load(URLRequest(url:currentURL!))
                 }
             }
         
             if detailText != nil
             {
-                if let curentText = textView
+                if let currentText = textView
                 {
-                    curentText.text = detailText
+                    currentText.text = detailText
                 }
             }
             else

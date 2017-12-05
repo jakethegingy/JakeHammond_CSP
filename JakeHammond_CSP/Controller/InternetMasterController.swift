@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WebKit
 
 public class InternetMasterViewontroller : UITableViewController
 {
@@ -54,22 +55,22 @@ public class InternetMasterViewontroller : UITableViewController
         self.clearsSelectionOnViewWillAppear = false
     }
     
-    override public func numberOfSelection(in tableView: UITableView) -> Int
+    override public func numberOfSections(in tableView: UITableView) -> Int
     {
         // #warningIncomplete implementation, return the number of selections
         return 1
     }
     
-    override public func tableView( tableView: UITableView, numberOfRowsInSelection section: Int) -> Int
+    override public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return internetTopics.count
     }
     
-    override public func tableView( tableView: UITableView, cellForRowAt indexPath: indexPath) -> UITableViewCell
+    override public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-    let cell = talbeView.dequeueReusableCel(withIdentifier: "reuseIdentifier", for: indexPath)
+    let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
     let currentText = internetTopics[indexPath.row]
-    cell.textLable!.text = currentText
+    cell.textLabel!.text = currentText
     
     return cell
     }
@@ -99,8 +100,8 @@ public class InternetMasterViewontroller : UITableViewController
                     InternetDetailViewController
                 
                 controller.detailAddress = urlString
-                controller.detailView = pageText
-                controller.navigationItem.leftBarBttonItem =
+                controller.detailText = pageText
+                controller.navigationItem.leftBarButtonItem =
                     splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }

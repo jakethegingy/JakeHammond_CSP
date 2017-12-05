@@ -11,7 +11,6 @@
 		CF4BB18F1FB35220001B0A86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4BB18E1FB35220001B0A86 /* ViewController.swift */; };
 		CF4BB1921FB35220001B0A86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4BB1901FB35220001B0A86 /* Main.storyboard */; };
 		CF4BB1941FB35220001B0A86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF4BB1931FB35220001B0A86 /* Assets.xcassets */; };
-		CF4BB1971FB35220001B0A86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4BB1951FB35220001B0A86 /* LaunchScreen.storyboard */; };
 		CF4BB1A21FB352BC001B0A86 /* CreativityControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4BB1A11FB352BC001B0A86 /* CreativityControllerViewController.swift */; };
 		CF4BB1A41FB352D9001B0A86 /* AbstractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4BB1A31FB352D9001B0A86 /* AbstractionController.swift */; };
 		CF4BB1A61FB352F2001B0A86 /* DataInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4BB1A51FB352F2001B0A86 /* DataInfoController.swift */; };
@@ -21,6 +20,7 @@
 		CF90B5C81FCF0ABF004AA206 /* InternetMasterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF90B5C71FCF0ABF004AA206 /* InternetMasterController.swift */; };
 		CF90B5CA1FCF0AD9004AA206 /* InternetDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF90B5C91FCF0AD9004AA206 /* InternetDetailController.swift */; };
 		CF90B5CD1FCF0B2A004AA206 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF90B5CC1FCF0B2A004AA206 /* WebKit.framework */; };
+		CFE2F7B31FD6EFE100A2D8D2 /* drawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE2F7B21FD6EFE100A2D8D2 /* drawingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,6 @@
 		CF4BB18E1FB35220001B0A86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CF4BB1911FB35220001B0A86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF4BB1931FB35220001B0A86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CF4BB1961FB35220001B0A86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF4BB1981FB35220001B0A86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF4BB1A11FB352BC001B0A86 /* CreativityControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativityControllerViewController.swift; sourceTree = "<group>"; };
 		CF4BB1A31FB352D9001B0A86 /* AbstractionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractionController.swift; sourceTree = "<group>"; };
@@ -40,6 +39,7 @@
 		CF90B5C71FCF0ABF004AA206 /* InternetMasterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterController.swift; sourceTree = "<group>"; };
 		CF90B5C91FCF0AD9004AA206 /* InternetDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailController.swift; sourceTree = "<group>"; };
 		CF90B5CC1FCF0B2A004AA206 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		CFE2F7B21FD6EFE100A2D8D2 /* drawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drawingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				CF4BB1901FB35220001B0A86 /* Main.storyboard */,
-				CF4BB1951FB35220001B0A86 /* LaunchScreen.storyboard */,
+				CFE2F7B21FD6EFE100A2D8D2 /* drawingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,7 +183,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF4BB1971FB35220001B0A86 /* LaunchScreen.storyboard in Resources */,
 				CF4BB1941FB35220001B0A86 /* Assets.xcassets in Resources */,
 				CF4BB1921FB35220001B0A86 /* Main.storyboard in Resources */,
 			);
@@ -204,6 +203,7 @@
 				CF90B5C81FCF0ABF004AA206 /* InternetMasterController.swift in Sources */,
 				CF4BB1A21FB352BC001B0A86 /* CreativityControllerViewController.swift in Sources */,
 				CF4BB1AA1FB35322001B0A86 /* ProgramingController.swift in Sources */,
+				CFE2F7B31FD6EFE100A2D8D2 /* drawingView.swift in Sources */,
 				CF4BB18D1FB35220001B0A86 /* AppDelegate.swift in Sources */,
 				CF90B5CA1FCF0AD9004AA206 /* InternetDetailController.swift in Sources */,
 			);
@@ -218,14 +218,6 @@
 				CF4BB1911FB35220001B0A86 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CF4BB1951FB35220001B0A86 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CF4BB1961FB35220001B0A86 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
