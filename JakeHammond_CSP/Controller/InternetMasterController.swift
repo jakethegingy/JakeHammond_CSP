@@ -13,11 +13,11 @@ public class InternetMasterViewontroller : UITableViewController
     private (set) lazy var internetTopics : [String] =
     {
         return [
-            "Deinitions"
-            "CSP"
-            "CTEC"
-            "Canyons"
-            "Twitter"
+            "Deinitions",
+            "CSP",
+            "CTEC",
+            "Canyons",
+            "Twitter",
             "Swift Language Guide"
         ]
     }()
@@ -29,18 +29,18 @@ public class InternetMasterViewontroller : UITableViewController
     private func setup() -> Void
     {
         //TODO: Replace with your correct links
-        adresses = [
-            "https://www.google.com"
-            "https://www.google.com"
-            "https://www.google.com"
-            "https://www.google.com"
-            "https://www.google.com"
+        addresses = [
+            "https://www.google.com",
+            "https://www.google.com",
+            "https://www.google.com",
+            "https://www.google.com",
+            "https://www.google.com",
             "https://www.google.com"
         ]
         
         if let splitView = splitViewController
         {
-            let curreControllrs = splitView.childViewControllers
+            let currentControllers = splitView.childViewControllers
             detailViewController = currentControllers[0] as?
                 InternetDetailViewController
         }
@@ -54,18 +54,18 @@ public class InternetMasterViewontroller : UITableViewController
         self.clearsSelectionOnViewWillAppear = false
     }
     
-    override public func numberOfSelection(in tableView: UITableView) -> Int InternetDetailViewController
+    override public func numberOfSelection(in tableView: UITableView) -> Int
     {
         // #warningIncomplete implementation, return the number of selections
         return 1
     }
     
-    override public func tableViw( tableView: UITableView, numberOfRowsInSelection section: Int) -> Int
+    override public func tableView( tableView: UITableView, numberOfRowsInSelection section: Int) -> Int
     {
         return internetTopics.count
     }
     
-    override public fun tableView( tableView: UITableView, cellForRowAt indexPath: IndePath) -> UITableViewCell
+    override public func tableView( tableView: UITableView, cellForRowAt indexPath: indexPath) -> UITableViewCell
     {
     let cell = talbeView.dequeueReusableCel(withIdentifier: "reuseIdentifier", for: indexPath)
     let currentText = internetTopics[indexPath.row]
@@ -82,7 +82,7 @@ public class InternetMasterViewontroller : UITableViewController
         {
             if let indexPath = self.tableView.indexPathForSelectedRow
             {
-                let urlString = adress[indexPath.row]
+                let urlString = addresses[indexPath.row]
                 let pageText : String
                 
                 if indexPath.row == 0
@@ -95,7 +95,7 @@ public class InternetMasterViewontroller : UITableViewController
                     pageText = internetTopics[indexPath.row]
                 }
                 
-                let controller = segu.destination as!
+                let controller = segue.destination as!
                     InternetDetailViewController
                 
                 controller.detailAddress = urlString
