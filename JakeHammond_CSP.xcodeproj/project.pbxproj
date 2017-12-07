@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF19494D1FD99CC3009EB16C /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF19494C1FD99CC3009EB16C /* ArtCell.swift */; };
 		CF4BB18D1FB35220001B0A86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4BB18C1FB35220001B0A86 /* AppDelegate.swift */; };
 		CF4BB18F1FB35220001B0A86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4BB18E1FB35220001B0A86 /* ViewController.swift */; };
 		CF4BB1921FB35220001B0A86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4BB1901FB35220001B0A86 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF19494C1FD99CC3009EB16C /* ArtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
 		CF4BB1891FB35220001B0A86 /* JakeHammond_CSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JakeHammond_CSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF4BB18C1FB35220001B0A86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF4BB18E1FB35220001B0A86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				CF4BB1A11FB352BC001B0A86 /* CreativityControllerViewController.swift */,
 				CF90B5C91FCF0AD9004AA206 /* InternetDetailController.swift */,
 				CF90B5C71FCF0ABF004AA206 /* InternetMasterController.swift */,
+				CF19494C1FD99CC3009EB16C /* ArtCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				CFE2F7B31FD6EFE100A2D8D2 /* drawingView.swift in Sources */,
 				CF4BB18D1FB35220001B0A86 /* AppDelegate.swift in Sources */,
 				CF90B5CA1FCF0AD9004AA206 /* InternetDetailController.swift in Sources */,
+				CF19494D1FD99CC3009EB16C /* ArtCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

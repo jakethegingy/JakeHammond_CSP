@@ -11,7 +11,7 @@ import UIKit
 public class CreativityControllerViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout
 {
     private let reuseIdentifier = "artIdentifier"
-    private let sctionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
+    private let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
     private let itemsPerRow : CGFloat = 3
     
     private lazy var artSelection : [UIImage?] =
@@ -98,15 +98,52 @@ public class CreativityControllerViewController: UICollectionViewController, UIC
         return artCell
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //MARK:- Delegate methods
+    
+    public func collectionView(_ collectionView: UICollectionView,
+                               layout collectionViewLayout: UICollectionViewLayout,
+                               sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if indexPath == largePhotoIndexPath
+        {
+            let art = artSelection[indexPath.row]
+            let size = collectionView.bounds.size
+            let widthScale = (size.width / art!.size.width) * CGFloat(0.08)
+            let largeSize = CGSize(width: art!.size.width * widthScale, height: art!.size.height * widthScale)
+            
+            return largeSize
+        }
+        
+        let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
+        let availableWidth = view.frame.width - paddingSpace
+        let widthPerItem = availableWidth / itemsPerRow
+        
+        return CGSize(width: widthPerItem, height: widthPerItem)
     }
-    */
-
+    
+    public func collectionView(_ collectionView: UICollectionView,
+                               layout collectionCiewLayout: UICollectionViewLayout,
+                               insetForSectionAt section: Int) -> UIEdgeInsets {
+        return sectionInsets
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView,
+                               layout collectionViewLayout: UICollectionViewLayout,
+                               minimumLinepacingForSectionAt seciton: Int) -> CGFloat {
+        return sectionInsets.left
+    }
+    
+    override public func collectionView(_ collectionView: UICollectionView,
+                                        shouldSelectItemAt indexPath: IndexPath) -> Bool
+    {
+        if largePhotoIndexPath == indexPath
+        {
+            largePhotoIndexPath = nil
+        }
+        else
+        {
+            largePhotoIndexPath = indexPath
+        }
+        
+        return false
+    }
 }
