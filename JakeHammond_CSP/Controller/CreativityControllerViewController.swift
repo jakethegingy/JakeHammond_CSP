@@ -69,15 +69,33 @@ public class CreativityControllerViewController: UICollectionViewController, UIC
     
     
     
-   override func viewDidLoad() {
+   override public func viewDidLoad()
+    {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
+    //MARK:- UICollectionView methods
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override public func numberOfSections(in collectionView:UICollectionView) -> Int
+    {
+        return 1
+    }
+    
+    override public func collectionView(_ collectionView: UICollectionView,
+                                        numberOfItemsInSection section: Int) -> Int
+    {
+        return artSelection.count
+    }
+    
+    override public func collectionView(_ collectionView: UICollectionView,
+                                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    {
+        let artCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ArtCell
+        
+        artCell.backgroundColor = .grey
+        artCell.imageView.image = artSelection[indexPath.row]
+        artCell.imageName.text = "My Art"
+        
+        return artCell
     }
     
 
