@@ -7,21 +7,26 @@
 //
 
 import UIKit
+import SpriteKit
 
-class ViewController: UIViewController
+public class ViewController: UIViewController
 {
-    // MARK: Data members
-   
-    override func viewDidLoad() {
+    //MARK: UI Components
+    
+    override public func viewDidLoad() -> Void
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let gameScene = StartScene(size: view.bounds.size)
+        let gameView = view as! SKView
+        
+        gameView.showsFPS = true
+        gameView.showsNodeCount = true
+        gameView.ignoresSiblingOrder = true
+        
+        gameScene.scaleMode = .resizeFill
+        gameView.presentScene(gameScene)
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    
 }
 
