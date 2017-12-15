@@ -7,29 +7,29 @@
 //
 
 import UIKit
+import SpriteKit
 
-class ProgramingController: UIViewController {
-
-    override func viewDidLoad() {
+public class ProgramingController: UIViewController
+{
+    //MARK: UI Components
+    
+    override public func viewDidLoad() -> Void
+    {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        let gameScene = StartScene(size: view.bounds.size)
+        let gameView = view as! SKView
+        
+        gameView.showsFPS = true
+        gameView.showsNodeCount = true
+        gameView.ignoresSiblingOrder = true
+        
+        gameScene.scaleMode = .resizeFill
+        gameView.presentScene(gameScene)
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+//    override func didRecieveMemoryWarning()
+//    {
+//        super.didRecieveMemoryWarning()
+//    }
 }

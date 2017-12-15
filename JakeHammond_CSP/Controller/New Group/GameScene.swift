@@ -58,7 +58,8 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
 
     private func setupPlayer() -> Void
     {
-    
+        player.position = CGPoint(x:self.frame.midX, y:player.size.height/2 + 10)
+        addChild(player)
     }
     
     private func moveInvaders() -> Void
@@ -166,6 +167,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         
         var firstBody: SKPhysicsBody
         var secondBody: SKPhysicsBody
+       
         if contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask
         {
             firstBody = contact.bodyA
@@ -176,6 +178,35 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
             firstBody = contact.bodyB
             secondBody = contact.bodyA
         }
+         if ((firstBody.categoryBitMask & CollisionCategories.Invader != 0) &&
+            (secondBody.categoryBitMask & CollisionCategories.PlayerBullet != 0))
+        {
+            print("Invader and Player Bullet Contact")
+        }
+        
+        if ((firstBody.categoryBitMask & CollisionCategories.Player != 0) &&
+            (secondBody.categoryBitMask & CollisionCategories.InvaderBullet != 0))
+        {
+            print("Player and Invaer Bullet Contct")
+        }
+        
+        if ((firstBody.categoryBitMask & CollisionCategories.Invader != 0) &&
+            (secondBody.categoryBitMask & CollisionCategories.Player != 0))
+        {
+            print("Invader and Player Collision Contact")
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
     }
     

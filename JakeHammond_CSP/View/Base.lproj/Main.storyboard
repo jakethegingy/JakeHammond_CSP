@@ -586,8 +586,12 @@
                                     <rect key="frame" x="0.0" y="0.0" width="250" height="300"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DOu-vc-cud">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DOu-vc-cud">
                                             <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="250" id="wYE-WZ-d9t"/>
+                                                <constraint firstAttribute="width" constant="250" id="yQ6-K3-yJL"/>
+                                            </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDL-Lz-Lcl">
                                             <rect key="frame" x="0.0" y="250" width="250" height="50"/>
@@ -600,10 +604,22 @@
                                 <constraints>
                                     <constraint firstAttribute="trailingMargin" secondItem="YDL-Lz-Lcl" secondAttribute="trailing" id="0AE-Nf-t5W"/>
                                     <constraint firstAttribute="bottom" secondItem="DOu-vc-cud" secondAttribute="bottom" constant="50" id="5H1-YC-1LM"/>
+                                    <constraint firstAttribute="trailing" secondItem="DOu-vc-cud" secondAttribute="trailing" id="5Ls-Q4-CxY"/>
+                                    <constraint firstItem="DOu-vc-cud" firstAttribute="leading" secondItem="ATZ-LR-00t" secondAttribute="leading" id="6eu-Xr-3c5"/>
+                                    <constraint firstItem="DOu-vc-cud" firstAttribute="centerX" secondItem="ATZ-LR-00t" secondAttribute="centerX" id="7ib-a3-0to"/>
                                     <constraint firstAttribute="trailing" secondItem="DOu-vc-cud" secondAttribute="trailing" id="82N-Op-JOd"/>
+                                    <constraint firstItem="DOu-vc-cud" firstAttribute="trailing" secondItem="YDL-Lz-Lcl" secondAttribute="trailing" id="Ef3-dM-Zbk"/>
+                                    <constraint firstItem="DOu-vc-cud" firstAttribute="top" secondItem="ATZ-LR-00t" secondAttribute="top" id="IKG-lM-dpQ"/>
+                                    <constraint firstItem="DOu-vc-cud" firstAttribute="leading" secondItem="YDL-Lz-Lcl" secondAttribute="leading" id="IMq-CO-YCE"/>
+                                    <constraint firstItem="DOu-vc-cud" firstAttribute="leading" secondItem="ATZ-LR-00t" secondAttribute="leading" id="Ic7-oD-EeZ"/>
+                                    <constraint firstItem="DOu-vc-cud" firstAttribute="centerX" secondItem="YDL-Lz-Lcl" secondAttribute="centerX" id="Isi-re-fAX"/>
+                                    <constraint firstItem="DOu-vc-cud" firstAttribute="leading" secondItem="ATZ-LR-00t" secondAttribute="leading" id="Mtm-kb-yCL"/>
                                     <constraint firstItem="YDL-Lz-Lcl" firstAttribute="leading" secondItem="ATZ-LR-00t" secondAttribute="leadingMargin" id="P90-Ql-dnw"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="YDL-Lz-Lcl" secondAttribute="bottom" id="gq1-MO-88K"/>
+                                    <constraint firstItem="YDL-Lz-Lcl" firstAttribute="top" secondItem="DOu-vc-cud" secondAttribute="bottom" id="h3n-5p-rG1"/>
                                     <constraint firstItem="DOu-vc-cud" firstAttribute="leading" secondItem="ATZ-LR-00t" secondAttribute="leading" id="hfG-FT-Gr1"/>
+                                    <constraint firstItem="DOu-vc-cud" firstAttribute="top" secondItem="ATZ-LR-00t" secondAttribute="top" id="mbe-UP-Olf"/>
+                                    <constraint firstItem="DOu-vc-cud" firstAttribute="top" secondItem="ATZ-LR-00t" secondAttribute="top" id="pFc-AQ-sOh"/>
                                     <constraint firstItem="YDL-Lz-Lcl" firstAttribute="top" secondItem="DOu-vc-cud" secondAttribute="bottom" id="yQS-dP-jvq"/>
                                 </constraints>
                                 <connections>
@@ -800,7 +816,7 @@
         <image name="javaSample" width="1126" height="754"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="djY-es-ok4"/>
+        <segue reference="a6s-S1-paJ"/>
         <segue reference="GSf-5L-UYi"/>
         <segue reference="lIl-4M-EJI"/>
         <segue reference="ueu-RM-JGa"/>
