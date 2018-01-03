@@ -31,6 +31,7 @@
 		CF90B5C81FCF0ABF004AA206 /* InternetMasterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF90B5C71FCF0ABF004AA206 /* InternetMasterController.swift */; };
 		CF90B5CA1FCF0AD9004AA206 /* InternetDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF90B5C91FCF0AD9004AA206 /* InternetDetailController.swift */; };
 		CF90B5CD1FCF0B2A004AA206 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF90B5CC1FCF0B2A004AA206 /* WebKit.framework */; };
+		CFADF5BD1FFD251F00CED69D /* DeathScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFADF5BC1FFD251F00CED69D /* DeathScene.swift */; };
 		CFE2F7B31FD6EFE100A2D8D2 /* drawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE2F7B21FD6EFE100A2D8D2 /* drawingView.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		CF90B5C71FCF0ABF004AA206 /* InternetMasterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetMasterController.swift; sourceTree = "<group>"; };
 		CF90B5C91FCF0AD9004AA206 /* InternetDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailController.swift; sourceTree = "<group>"; };
 		CF90B5CC1FCF0B2A004AA206 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		CFADF5BC1FFD251F00CED69D /* DeathScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathScene.swift; sourceTree = "<group>"; };
 		CFE2F7B21FD6EFE100A2D8D2 /* drawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drawingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +157,7 @@
 				CF766A191FE18200008EE68C /* StartScene.swift */,
 				CF766A1D1FE1820D008EE68C /* GameScene.swift */,
 				CF766A1B1FE18207008EE68C /* LevelCompleteScene.swift */,
+				CFADF5BC1FFD251F00CED69D /* DeathScene.swift */,
 			);
 			name = GameController;
 			path = "New Group";
@@ -284,6 +287,7 @@
 				CF4BB18D1FB35220001B0A86 /* AppDelegate.swift in Sources */,
 				CF766A281FE187CD008EE68C /* Player.swift in Sources */,
 				CF766A2A1FE187CD008EE68C /* Projectile.swift in Sources */,
+				CFADF5BD1FFD251F00CED69D /* DeathScene.swift in Sources */,
 				CF90B5CA1FCF0AD9004AA206 /* InternetDetailController.swift in Sources */,
 				CF19494D1FD99CC3009EB16C /* ArtCell.swift in Sources */,
 			);
