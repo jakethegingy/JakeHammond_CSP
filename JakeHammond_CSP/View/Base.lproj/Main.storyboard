@@ -525,7 +525,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j5Y-xB-gbk">
-                                <rect key="frame" x="20" y="381" width="374" height="335"/>
+                                <rect key="frame" x="0.0" y="143" width="414" height="593"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
@@ -533,15 +533,8 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ned-AJ-oLk">
-                                <rect key="frame" x="20" y="168" width="271" height="141"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CO1-uo-Ya4">
-                                <rect key="frame" x="20" y="76" width="226" height="62"/>
+                                <rect key="frame" x="20" y="52" width="226" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Home Menu">
@@ -551,6 +544,13 @@
                                     <segue destination="Vpe-vv-hZr" kind="show" id="lIl-4M-EJI"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ned-AJ-oLk">
+                                <rect key="frame" x="20" y="52" width="271" height="141"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Jdk-Ty-quG"/>
@@ -562,7 +562,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9f2-QL-jVm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2557.971014492754" y="-455.70652173913049"/>
+            <point key="canvasLocation" x="2815.9420289855075" y="-326.08695652173918"/>
         </scene>
         <!--Creativity Controller View Controller-->
         <scene sceneID="JQj-lA-TAE">
@@ -642,7 +642,7 @@
         <!--Root View Controller-->
         <scene sceneID="IyM-ot-jpT">
             <objects>
-                <tableViewController clearsSelectionOnViewWillAppear="NO" id="Bjx-WA-Auh" sceneMemberID="viewController">
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="Bjx-WA-Auh" customClass="InternetMasterViewontroller" customModule="JakeHammond_CSP" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="MeL-Lr-L9E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -656,7 +656,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="WRR-65-BhJ" kind="showDetail" id="rfb-mh-zmA"/>
+                                    <segue destination="WRR-65-BhJ" kind="showDetail" identifier="showDetail" id="rfb-mh-zmA"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -665,7 +665,18 @@
                             <outlet property="delegate" destination="Bjx-WA-Auh" id="JyR-dJ-QIa"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="DYe-xl-d0T"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="DYe-xl-d0T">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" style="plain" id="OXC-cH-rRF">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="udn-vv-XbT">
+                                <rect key="frame" x="20" y="7" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <connections>
+                                <segue destination="Vpe-vv-hZr" kind="show" id="bgR-Cr-lbh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bRf-Gl-M9W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -816,8 +827,8 @@
         <image name="javaSample" width="1126" height="754"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="a6s-S1-paJ"/>
-        <segue reference="GSf-5L-UYi"/>
+        <segue reference="djY-es-ok4"/>
+        <segue reference="rfb-mh-zmA"/>
         <segue reference="lIl-4M-EJI"/>
         <segue reference="ueu-RM-JGa"/>
         <segue reference="Hw9-D6-aM5"/>
