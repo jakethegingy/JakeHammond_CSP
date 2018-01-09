@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF16073020050C2E00228B02 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF16072F20050C2E00228B02 /* DataViewController.swift */; };
+		CF16073220050CF600228B02 /* BucketItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF16073120050CF600228B02 /* BucketItemCell.swift */; };
+		CF16073420050D9800228B02 /* BucketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF16073320050D9800228B02 /* BucketItem.swift */; };
+		CF16073720050F6300228B02 /* bucket.csv in Resources */ = {isa = PBXBuildFile; fileRef = CF16073620050F6300228B02 /* bucket.csv */; };
 		CF19494D1FD99CC3009EB16C /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF19494C1FD99CC3009EB16C /* ArtCell.swift */; };
 		CF4BB18D1FB35220001B0A86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4BB18C1FB35220001B0A86 /* AppDelegate.swift */; };
 		CF4BB18F1FB35220001B0A86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4BB18E1FB35220001B0A86 /* ViewController.swift */; };
@@ -36,6 +40,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF16072F20050C2E00228B02 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		CF16073120050CF600228B02 /* BucketItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItemCell.swift; sourceTree = "<group>"; };
+		CF16073320050D9800228B02 /* BucketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItem.swift; sourceTree = "<group>"; };
+		CF16073620050F6300228B02 /* bucket.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = bucket.csv; path = ../../../../../Downloads/bucket.csv; sourceTree = "<group>"; };
 		CF19494C1FD99CC3009EB16C /* ArtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
 		CF4BB1891FB35220001B0A86 /* JakeHammond_CSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JakeHammond_CSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF4BB18C1FB35220001B0A86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF16072E20050BC900228B02 /* DataView */ = {
+			isa = PBXGroup;
+			children = (
+				CF16072F20050C2E00228B02 /* DataViewController.swift */,
+				CF16073120050CF600228B02 /* BucketItemCell.swift */,
+			);
+			path = DataView;
+			sourceTree = "<group>";
+		};
 		CF4BB1801FB35220001B0A86 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +132,7 @@
 		CF4BB19E1FB35257001B0A86 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CF16072E20050BC900228B02 /* DataView */,
 				CF766A1F1FE18259008EE68C /* GameController */,
 				CF4BB18C1FB35220001B0A86 /* AppDelegate.swift */,
 				CF4BB1AD1FB35352001B0A86 /* GlobalImpactController.swift */,
@@ -144,6 +162,7 @@
 		CF4BB1A01FB3527E001B0A86 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CF16073620050F6300228B02 /* bucket.csv */,
 				CF766A131FE176C5008EE68C /* Utilities.swift */,
 				CF4BB1931FB35220001B0A86 /* Assets.xcassets */,
 				CF4BB1981FB35220001B0A86 /* Info.plist */,
@@ -171,6 +190,7 @@
 				CF766A231FE186E2008EE68C /* Player.swift */,
 				CF766A241FE186E6008EE68C /* PlayerLaser.swift */,
 				CF766A251FE186E9008EE68C /* Projectile.swift */,
+				CF16073320050D9800228B02 /* BucketItem.swift */,
 			);
 			name = Model;
 			path = "New Group";
@@ -257,6 +277,7 @@
 			files = (
 				CF4BB1941FB35220001B0A86 /* Assets.xcassets in Resources */,
 				CF4BB1921FB35220001B0A86 /* Main.storyboard in Resources */,
+				CF16073720050F6300228B02 /* bucket.csv in Resources */,
 				CF766A161FE1771E008EE68C /* StarField.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +293,7 @@
 				CF766A271FE187CD008EE68C /* InvaderLaser.swift in Sources */,
 				CF766A261FE187CD008EE68C /* Invader.swift in Sources */,
 				CF766A1C1FE18207008EE68C /* LevelCompleteScene.swift in Sources */,
+				CF16073020050C2E00228B02 /* DataViewController.swift in Sources */,
 				CF766A1E1FE1820D008EE68C /* GameScene.swift in Sources */,
 				CF766A1A1FE18200008EE68C /* StartScene.swift in Sources */,
 				CF4BB1A41FB352D9001B0A86 /* AbstractionController.swift in Sources */,
@@ -279,6 +301,8 @@
 				CF766A291FE187CD008EE68C /* PlayerLaser.swift in Sources */,
 				CF4BB18F1FB35220001B0A86 /* ViewController.swift in Sources */,
 				CF766A141FE176C6008EE68C /* Utilities.swift in Sources */,
+				CF16073220050CF600228B02 /* BucketItemCell.swift in Sources */,
+				CF16073420050D9800228B02 /* BucketItem.swift in Sources */,
 				CF4BB1A81FB3530F001B0A86 /* AlgorithimsController.swift in Sources */,
 				CF90B5C81FCF0ABF004AA206 /* InternetMasterController.swift in Sources */,
 				CF4BB1A21FB352BC001B0A86 /* CreativityControllerViewController.swift in Sources */,
